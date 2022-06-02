@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./artudent_form.css" />
+<!-- <style type="text/css">
+    @import url("css/artudent_form.css");
+</style> -->
+  <title>artudent_form</title>
+</head>
+
+<body style="background-color: rgb(226, 223, 223,0.3);">
+<form name="frm" action="UserServlet" method="post" onsubmit="return Checkform();"> 
+    <!-- 아튜던트 이메일로 변경하기 -->
+  <div class="subject" style="text-align:center ;">  
+  <h1>Artudent 작품 전시 신청</h1>
+  </div>
+  <div id="container">
+    <div class="box8">
+        <p>신청자 성명 <a>*</a></p>
+        <p><input type="text" name="name01" placeholder="Enter your answer"></p>
+    </div>
+    <div class="box9">
+        <p>작가/단체명 </p>
+        <p><input type="text" name="name02" placeholder="Enter your answer"></p>
+    </div>
+    <div class="box10">
+        <p>이메일 <a>*</a></p>
+        <p><input type="email" name="email" placeholder="Enter your answer"></p>
+    </div>
+    <div class="box1">
+        <p>전시 디자인 선택 <a>*</a></p>
+        <div class = "textbox1">
+            <p><label><input type="radio" name="PageDesign" value="">단순 전시 페이지(배경 색상 변경 가능)</label></p>
+            <p><label><input type="radio" name="PageDesign" value="">인포 그래픽 형식(배경 색상 변경 가능)</label></p>
+            <p><label><input type="radio" name="PageDesign" value="">제작의뢰</label></p>
+        </div>
+    </div>
+    <div class="box2">
+        <p>전시 배경 선택 <a>*</a></p>
+        <p><label><input type="radio" name="bgcolor" value="">추천배경(흰색)</label></p>
+        <p><label><input type="radio" name="bgcolor" value="">직접 선택</label></p>
+    </div>
+    <div class="box3">
+        <p>전시 배경 색상</p>
+        <p style="font-size: 13px;">희망하는 전시배경에 대한 색상이 있다면, 적어주시길 바랍니다 :)</p>
+        <p><input type="text" name="bgcolor02" placeholder="Enter your answer"></p>
+    </div>
+    <div class="box4">
+        <p>전시 배경 업로드</p>
+        <p style="font-size: 13px;">희망하는 전시배경에 대한 예시가 있다면, 업로드해주시길 바랍니다 :)</p>
+        <p><input type="file"></p>
+    </div>
+    <div class="box5">
+        <p>전시 참여 인원 <a>*</a></p>
+        <p><input type="text" name="number01" placeholder="Enter your answer"></p>
+    </div>
+    <div class="box6">
+        <p>전시 작품 총 수량 <a>*</a></p>
+        <p><input type="text" name="sum01" placeholder="Enter your answer"></p>
+    </div>
+    <div class="box7">
+        <p>단체의 경우, 1인당 몇 개의 작품을 등록하시나요? </p>
+        <p><input type="text" name="sum02" placeholder="Enter your answer"></p>
+    </div>
+    <div class="box11">
+        <p>작품 사진 업로드 </p>
+        <p style="font-size: 13px;">작품 설명을 함께 업로드 해주셔도 괜찮습니다.</p>
+        <p><input type="file"></p>
+    </div>
+    <div class="box12" >
+        <p>첨부한 작품에 대한 설명 <a>*</a></p>
+        <p style="font-size: 13px;">업로드해주신 모든 작품에 대한 설명을 적어주세요.</p>
+        <p class="explan"><input type="text2" name="explanation" placeholder="Enter your answer" ></p>
+    </div>
+    <div class="box15">
+        <p>첨부한 작품에 대한 SNS 업로드 동의 <a>*</a></p>
+        <div class = "textbox1">
+            <p><label><input type="radio" name="yes_no" value="">예</label></p>
+            <p><label><input type="radio" name="yes_no" value="">아니오</label></p>
+        </div>
+    </div>
+    <!--<form action="http://localhost/form.php">  아튜던트 이메일로 변경하기 -->
+        <p><input type='submit' value='Submit'></p>
+        <!-- <p><button>Submit</button ></p> -->
+    <!-- </form> -->
+  </div>
+  
+  
+</form>
+</body>
+</html>
+
